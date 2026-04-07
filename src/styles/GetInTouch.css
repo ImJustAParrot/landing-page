@@ -1,0 +1,360 @@
+.get-in-touch {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.get-in-touch::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.05) 0%, transparent 70%);
+  animation: rotateBg 30s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotateBg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.get-in-touch-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.get-in-touch-content {
+  text-align: left;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.badge-icon {
+  font-size: 1.1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.get-in-touch-content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.get-in-touch-content > p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.get-in-touch-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.get-in-touch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 60px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 10px 25px -5px rgba(102, 126, 234, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  margin-bottom: 1rem;
+}
+
+.get-in-touch-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 20px 35px -8px rgba(102, 126, 234, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.get-in-touch-btn:active {
+  transform: translateY(0);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.btn-arrow {
+  transition: transform 0.3s ease;
+}
+
+.get-in-touch-btn:hover .btn-arrow {
+  transform: translateX(5px);
+}
+
+.get-in-touch-note {
+  font-size: 0.8rem;
+  color: #718096;
+  margin: 0;
+}
+
+.get-in-touch-decoration {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient-bg-shape {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 50%;
+  animation: floatShape 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes floatShape {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+.decoration-cards {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 350px;
+}
+
+.deco-card {
+  background: white;
+  padding: 1.2rem 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 
+    0 15px 35px -10px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(102, 126, 234, 0.1);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.deco-card:hover {
+  transform: translateX(10px);
+  box-shadow: 
+    0 20px 40px -12px rgba(102, 126, 234, 0.3),
+    0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.card-1 {
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.card-2 {
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  animation: slideInLeft 0.6s ease-out 0.2s backwards;
+}
+
+.card-3 {
+  margin-left: 1rem;
+  animation: slideInLeft 0.6s ease-out 0.4s backwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.deco-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.3));
+}
+
+.deco-text {
+  font-weight: 600;
+  color: #1a202c;
+  font-size: 1rem;
+}
+
+@media (max-width: 968px) {
+  .get-in-touch {
+    padding: 4rem 1.5rem;
+  }
+
+  .get-in-touch-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .get-in-touch-content {
+    text-align: center;
+  }
+
+  .get-in-touch-content > p {
+    max-width: 100%;
+  }
+
+  .get-in-touch-stats {
+    justify-content: center;
+  }
+
+  .get-in-touch-btn {
+    margin: 0 auto 1rem auto;
+  }
+
+  .decoration-cards {
+    margin: 0 auto;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    margin-left: 0;
+  }
+
+  .get-in-touch-decoration {
+    min-height: auto;
+  }
+
+  .gradient-bg-shape {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .get-in-touch-content h2 {
+    font-size: 2rem;
+  }
+
+  .get-in-touch-stats {
+    gap: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .deco-card {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .deco-icon {
+    font-size: 1.5rem;
+  }
+
+  .deco-text {
+    font-size: 0.85rem;
+  }
+}
