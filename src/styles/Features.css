@@ -1,6 +1,6 @@
 .features {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  background: #0F172A;
   position: relative;
   overflow: hidden;
 }
@@ -12,7 +12,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(102,126,234,0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(56,189,248,0.3), transparent);
 }
 
 .features-container {
@@ -32,10 +32,10 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1.2rem;
-  background: linear-gradient(135deg, rgba(102,126,234,0.1) 0%, rgba(118,75,162,0.1) 100%);
+  background: linear-gradient(135deg, rgba(56,189,248,0.1) 0%, rgba(99,102,241,0.1) 100%);
   border-radius: 50px;
   font-size: 0.9rem;
-  color: #667eea;
+  color: #38BDF8;
   font-weight: 600;
   margin-bottom: 1rem;
   position: relative;
@@ -44,7 +44,7 @@
 .badge-pulse {
   width: 8px;
   height: 8px;
-  background: #667eea;
+  background: #38BDF8;
   border-radius: 50%;
   animation: badgePulse 1.5s ease-in-out infinite;
 }
@@ -62,13 +62,13 @@
 
 .section-header h2 {
   font-size: 2.8rem;
-  color: #1a202c;
+  color: #E5E7EB;
   margin-bottom: 1rem;
   font-weight: 800;
 }
 
 .section-header p {
-  color: #4a5568;
+  color: #9CA3AF;
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
@@ -81,10 +81,10 @@
 }
 
 .feature-card {
-  background: white;
+  background: #1E293B;
   padding: 2rem;
   border-radius: 24px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -93,6 +93,7 @@
   flex-direction: column;
   height: 100%;
   min-height: 480px;
+  border: 1px solid rgba(56, 189, 248, 0.1);
 }
 
 .feature-card::before {
@@ -102,12 +103,17 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(102,126,234,0.05), transparent);
+  background: linear-gradient(90deg, transparent, rgba(56,189,248,0.05), transparent);
   transition: left 0.5s ease;
 }
 
 .feature-card:hover::before {
   left: 100%;
+}
+
+.feature-card:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  transform: translateY(-5px);
 }
 
 .feature-icon-wrapper {
@@ -151,13 +157,13 @@
 .feature-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #1a202c;
+  color: #E5E7EB;
   font-weight: 700;
   flex-shrink: 0;
 }
 
 .feature-card p {
-  color: #4a5568;
+  color: #9CA3AF;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   flex: 1;
@@ -169,7 +175,7 @@
   margin-top: auto;
   margin-bottom: 1.5rem;
   padding-top: 1rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid #334155;
   flex-shrink: 0;
 }
 
@@ -182,12 +188,12 @@
 .stat-value {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #667eea;
+  color: #38BDF8;
 }
 
 .stat-label {
   font-size: 0.75rem;
-  color: #718096;
+  color: #9CA3AF;
 }
 
 .feature-link {
@@ -196,7 +202,7 @@
   gap: 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #667eea;
+  color: #38BDF8;
   opacity: 0;
   transform: translateX(-10px);
   transition: all 0.3s ease;
@@ -223,7 +229,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 0% 0%, rgba(102,126,234,0.03) 0%, transparent 70%);
+  background: radial-gradient(circle at 0% 0%, rgba(56,189,248,0.03) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;

@@ -1,8 +1,18 @@
 .about {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: #0F172A;
   position: relative;
   overflow: hidden;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(56,189,248,0.3), transparent);
 }
 
 .about-container {
@@ -17,14 +27,14 @@
 .about-content h2 {
   font-size: 2.8rem;
   margin: 1rem 0 1.5rem;
-  color: #1a202c;
+  color: #E5E7EB;
   font-weight: 800;
   line-height: 1.2;
 }
 
 .about-description {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: #9CA3AF;
   line-height: 1.7;
   margin-bottom: 2rem;
 }
@@ -39,28 +49,30 @@
   text-align: center;
   flex: 1;
   padding: 1rem;
-  background: white;
+  background: #1E293B;
   border-radius: 16px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.1);
 }
 
 .about-stat:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.3);
 }
 
 .stat-number {
   font-size: 2.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
-  color: #4a5568;
+  color: #9CA3AF;
   font-size: 0.9rem;
   font-weight: 500;
   margin-bottom: 0.25rem;
@@ -68,7 +80,7 @@
 
 .stat-trend {
   font-size: 0.75rem;
-  color: #10b981;
+  color: #22C55E;
   font-weight: 600;
 }
 
@@ -82,12 +94,13 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: white;
+  background: #1E293B;
   border-radius: 50px;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #1a202c;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: #E5E7EB;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.1);
 }
 
 .achievement-icon {
@@ -105,11 +118,11 @@
 .gradient-sphere {
   width: 350px;
   height: 350px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 100%);
   border-radius: 50%;
   animation: rotate 20s linear infinite;
   position: relative;
-  box-shadow: 0 20px 50px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 20px 50px rgba(56, 189, 248, 0.3);
 }
 
 .sphere-inner {
@@ -118,7 +131,7 @@
   left: 10%;
   width: 80%;
   height: 80%;
-  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
   border-radius: 50%;
   animation: pulse 3s ease-in-out infinite;
 }
@@ -137,18 +150,20 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background: white;
+  background: #1E293B;
   padding: 1.5rem;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   text-align: center;
   min-width: 220px;
   transition: all 0.3s ease;
+  border: 1px solid rgba(56, 189, 248, 0.1);
 }
 
 .stats-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 30px 60px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 30px 60px rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.3);
 }
 
 .stats-header {
@@ -157,7 +172,7 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #4a5568;
+  color: #9CA3AF;
 }
 
 .stats-icon {
@@ -167,13 +182,13 @@
 .stats-number {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #667eea;
+  color: #38BDF8;
   margin-bottom: 0.5rem;
 }
 
 .stats-description {
   font-size: 0.875rem;
-  color: #718096;
+  color: #9CA3AF;
   margin-bottom: 1rem;
 }
 
@@ -187,7 +202,7 @@
 
 .chart-bar {
   width: 30px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #38BDF8, #6366F1);
   border-radius: 8px 8px 4px 4px;
   animation: chartRise 1s ease-out;
 }

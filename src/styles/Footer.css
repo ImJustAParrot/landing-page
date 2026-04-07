@@ -1,6 +1,6 @@
 .footer {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  color: white;
+  background: linear-gradient(135deg, #0F172A 0%, #020617 100%);
+  color: #E5E7EB;
   padding: 4rem 2rem 2rem;
   position: relative;
   overflow: hidden;
@@ -13,7 +13,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+  background: linear-gradient(90deg, #38BDF8, #6366F1, #38BDF8);
   background-size: 200% 100%;
   animation: gradientMove 3s linear infinite;
 }
@@ -57,13 +57,13 @@
 }
 
 .footer-brand .logo-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .footer-brand p {
-  color: #94a3b8;
+  color: #9CA3AF;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -71,7 +71,7 @@
 .newsletter h4 {
   font-size: 1rem;
   margin-bottom: 0.75rem;
-  color: #e2e8f0;
+  color: #E5E7EB;
 }
 
 .newsletter-form {
@@ -83,26 +83,26 @@
   flex: 1;
   padding: 0.75rem 1rem;
   border: 1px solid #334155;
-  background: #1e293b;
+  background: #1E293B;
   border-radius: 12px;
-  color: white;
+  color: #E5E7EB;
   font-family: inherit;
   transition: all 0.3s ease;
 }
 
 .newsletter-form input:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
 }
 
 .newsletter-form input::placeholder {
-  color: #64748b;
+  color: #64748B;
 }
 
 .newsletter-form button {
   padding: 0.75rem 1.25rem;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #38BDF8, #6366F1);
   border: none;
   border-radius: 12px;
   color: white;
@@ -113,7 +113,7 @@
 
 .newsletter-form button:hover {
   transform: translateX(3px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
 }
 
 .footer-links {
@@ -124,14 +124,14 @@
 
 .footer-column h4 {
   margin-bottom: 1.2rem;
-  color: #e2e8f0;
+  color: #E5E7EB;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .footer-column a {
   display: block;
-  color: #94a3b8;
+  color: #9CA3AF;
   text-decoration: none;
   margin-bottom: 0.75rem;
   transition: all 0.3s ease;
@@ -140,7 +140,7 @@
 }
 
 .footer-column a:hover {
-  color: #667eea;
+  color: #38BDF8;
   transform: translateX(5px);
 }
 
@@ -155,7 +155,7 @@
 }
 
 .footer-bottom p {
-  color: #94a3b8;
+  color: #9CA3AF;
   font-size: 0.875rem;
 }
 
@@ -168,14 +168,14 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #94a3b8;
+  color: #9CA3AF;
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 0.875rem;
 }
 
 .social-link:hover {
-  color: #667eea;
+  color: #38BDF8;
   transform: translateY(-3px);
 }
 

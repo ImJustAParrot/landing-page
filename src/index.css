@@ -16,6 +16,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background: #0F172A;
 }
 
 section {
@@ -89,8 +90,8 @@ a {
 }
 
 ::selection {
-  background: rgba(102, 126, 234, 0.2);
-  color: #667eea;
+  background: rgba(56, 189, 248, 0.2);
+  color: #38BDF8;
 }
 
 ::-webkit-scrollbar {
@@ -98,17 +99,17 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #1E293B;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 100%);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #5a67d8 0%, #6b46a0 100%);
+  background: linear-gradient(135deg, #0EA5E9 0%, #4F46E5 100%);
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,6 @@
 .get-in-touch {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
   position: relative;
   overflow: hidden;
 }
@@ -12,7 +12,7 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(102, 126, 234, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.05) 0%, transparent 70%);
   animation: rotateBg 30s linear infinite;
   pointer-events: none;
 }
@@ -46,10 +46,10 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1.2rem;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(56,189,248,0.1) 0%, rgba(99,102,241,0.1) 100%);
   border-radius: 50px;
   font-size: 0.9rem;
-  color: #667eea;
+  color: #38BDF8;
   font-weight: 600;
   margin-bottom: 1.5rem;
   position: relative;
@@ -75,11 +75,11 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: #1a202c;
+  color: #E5E7EB;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 100%);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -100,7 +100,7 @@
 
 .get-in-touch-content > p {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: #9CA3AF;
   line-height: 1.7;
   margin-bottom: 2rem;
   max-width: 90%;
@@ -122,14 +122,14 @@
 .stat-number {
   font-size: 2rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .stat-label {
   font-size: 0.85rem;
-  color: #718096;
+  color: #9CA3AF;
   font-weight: 500;
 }
 
@@ -138,7 +138,7 @@
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 100%);
   color: white;
   border: none;
   border-radius: 60px;
@@ -147,16 +147,16 @@
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 
-    0 10px 25px -5px rgba(102, 126, 234, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    0 10px 25px -5px rgba(56, 189, 248, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-bottom: 1rem;
 }
 
 .get-in-touch-btn:hover {
   transform: translateY(-3px);
   box-shadow: 
-    0 20px 35px -8px rgba(102, 126, 234, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    0 20px 35px -8px rgba(56, 189, 248, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .get-in-touch-btn:active {
@@ -187,7 +187,7 @@
 
 .get-in-touch-note {
   font-size: 0.8rem;
-  color: #718096;
+  color: #9CA3AF;
   margin: 0;
 }
 
@@ -203,7 +203,7 @@
   position: absolute;
   width: 350px;
   height: 350px;
-  background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.05) 100%);
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, rgba(99, 102, 241, 0.03) 100%);
   border-radius: 50%;
   animation: floatShape 6s ease-in-out infinite;
   z-index: 0;
@@ -226,15 +226,15 @@
 }
 
 .deco-card {
-  background: white;
+  background: #1E293B;
   padding: 1.2rem 1.5rem;
   border-radius: 20px;
   display: flex;
   align-items: center;
   gap: 1rem;
   box-shadow: 
-    0 15px 35px -10px rgba(0, 0, 0, 0.15),
-    0 0 0 1px rgba(102, 126, 234, 0.1);
+    0 15px 35px -10px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(56, 189, 248, 0.1);
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   position: relative;
@@ -243,8 +243,8 @@
 .deco-card:hover {
   transform: translateX(10px);
   box-shadow: 
-    0 20px 40px -12px rgba(102, 126, 234, 0.3),
-    0 0 0 2px rgba(102, 126, 234, 0.2);
+    0 20px 40px -12px rgba(56, 189, 248, 0.2),
+    0 0 0 2px rgba(56, 189, 248, 0.2);
 }
 
 .card-1 {
@@ -277,12 +277,12 @@
 
 .deco-icon {
   font-size: 2rem;
-  filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.3));
+  filter: drop-shadow(0 4px 8px rgba(56, 189, 248, 0.3));
 }
 
 .deco-text {
   font-weight: 600;
-  color: #1a202c;
+  color: #E5E7EB;
   font-size: 1rem;
 }
 
