@@ -228,22 +228,141 @@
     gap: 2rem;
   }
   
+  .about-content h2 {
+    font-size: 2rem;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+  }
+  
   .about-stats {
     justify-content: center;
     flex-wrap: wrap;
   }
   
+  .about-stat {
+    min-width: 140px;
+    flex: auto;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .stat-trend {
+    font-size: 0.7rem;
+  }
+  
   .about-achievements {
     justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .achievement {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .achievement-icon {
+    font-size: 1rem;
+  }
+  
+  .about-image {
+    min-height: auto;
+    flex-direction: column;
   }
   
   .gradient-sphere {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   
   .stats-card {
     position: relative;
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: auto;
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .stats-number {
+    font-size: 2rem;
+  }
+  
+  .chart-bar {
+    width: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+  
+  .about-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .about-description {
+    font-size: 0.9rem;
+  }
+  
+  .about-stats {
+    gap: 1rem;
+  }
+  
+  .about-stat {
+    padding: 0.75rem;
+    min-width: 100px;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+  }
+  
+  .gradient-sphere {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .stats-card {
+    padding: 1rem;
+    max-width: 240px;
+  }
+  
+  .stats-number {
+    font-size: 1.5rem;
+  }
+  
+  .stats-header {
+    font-size: 0.8rem;
+  }
+  
+  .stats-icon {
+    font-size: 1.2rem;
+  }
+  
+  .stats-description {
+    font-size: 0.75rem;
+  }
+  
+  .chart-bar {
+    width: 20px;
+  }
+  
+  .achievement {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
   }
 }

@@ -75,8 +75,11 @@ const Navbar = ({ openModal }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="logo" onClick={() => scrollToSection({ preventDefault: () => {} }, '#home', 'home')}>
-          <div className="logo-icon">💻</div>
-          <div className="logo-text">CodeMaster Academy</div>
+          <img 
+            src="/codemaster_logo.svg" 
+            alt="CodeMaster Academy" 
+            className="logo-image"
+          />
         </div>
         
         <div className={`nav-links ${mobileMenu ? 'active' : ''}`}>

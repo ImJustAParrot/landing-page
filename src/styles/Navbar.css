@@ -49,30 +49,19 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
   cursor: pointer;
   position: relative;
 }
 
-.logo-icon {
-  font-size: 2rem;
-  animation: float 3s ease-in-out infinite;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+.logo-image {
+  height: 80px;
+  width: auto;
+  transition: all 0.3s ease;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-5px); }
-}
-
-.logo-text {
-  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.logo-image:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4));
 }
 
 .nav-links {
@@ -191,6 +180,10 @@
   .navbar.scrolled {
     top: 0;
     background: rgba(15, 23, 42, 0.98);
+  }
+  
+  .navbar.scrolled::before {
+    border-radius: 0;
   }
   
   .hamburger {
